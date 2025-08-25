@@ -1,0 +1,101 @@
+<html>
+<head>
+    <title>Explore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+    body{
+        background: url("picture/background.jpg") no-repeat center center/cover;
+    }
+</style>
+</head>
+<body>
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+
+<div class="sidenav">
+    <label for="menu-toggle" class="close-btn">&times;</label>
+    <a href="home.html">Home</a>
+    <a href="blog.html">PUBLICATIONS</a>
+    <a href="applynow.html">APPLY NOW</a>
+    <a href="contactus.html">Contact Us</a>
+</div>
+
+<nav class="navbar">
+               
+                <div class="logo"><i> ISPR Internship</i></div>
+                <div class="nav-links">
+                    <a href="home.html">HOME</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="blog.html">BLOG</a>
+                    <a href="applynow.html">APPLY NOW</a>
+                    <a href="contactus.html">CONTACT US</a>
+                </div>
+</nav>
+
+<section id="apply" class="apply">
+    <h2>Internship Requirements:</h2>
+    <p>Applications are accepted through universities and regional ISPR coordinators. You can also apply online from our website.</strong>.</p>
+    <ol>
+      <li>Fill out the official application form via your university OR regional coordinator.</li>
+      <li>Attach CNIC copy, Police Verification, and HOD Recommendation Letter.</li>
+      <li>Submit before the deadline to secure your spot.</li>
+    </ol>
+  </section>
+<!-- Apply Now Form -->
+<section id="apply" class="apply">
+  <h2>Apply Now</h2>
+  <p>Please fill out the form below to apply for the ISPR Internship.</p>
+
+  <form action="submit_application.php" method="POST" enctype="multipart/form-data" class="apply-form">
+    
+    <!-- Personal Info -->
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="university">University:</label>
+    <input type="text" id="university" name="university" required>
+
+    <label for="field">Field of Study:</label>
+    <select id="field" name="field" required>
+      <option value="">-- Select --</option>
+      <option value="Mass Communication">Mass Communication</option>
+      <option value="Media Studies">Media Studies</option>
+      <option value="Journalism">Journalism</option>
+      <option value="International Relations">International Relations</option>
+      <option value="Political Science">Political Science</option>
+      <option value="Computer Science">Computer Science</option>
+      <option value="Film & TV Production">Film & TV Production</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <!-- Upload Documents -->
+    <label for="cv">Upload CV:</label>
+    <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+
+    <label for="cnic">Upload CNIC Copy:</label>
+    <input type="file" id="cnic" name="cnic" accept=".jpg,.jpeg,.png,.pdf" required>
+
+    <label for="police">Upload Police Verification:</label>
+    <input type="file" id="police" name="police" accept=".jpg,.jpeg,.png,.pdf" required>
+
+    <!-- Submit -->
+    <button type="submit" class="btn">Submit Application</button>
+  </form>
+</section>
+
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="copyright">
+            <i class="fa-regular fa-copyright"></i> ISPR. ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+
+</body>
+</html>
